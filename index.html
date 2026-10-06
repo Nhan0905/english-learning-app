@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -434,6 +434,54 @@
             font-size: 14px;
             display: block;
             margin-top: 5px;
+        }
+
+        /* ==========================================
+           TỐI ƯU HÓA GIAO DIỆN CHO ĐIỆN THOẠI (MOBILE RESPONSIVE)
+           ========================================== */
+        @media screen and (max-width: 768px) {
+            /* Xếp chồng logo và thanh điều hướng theo chiều dọc */
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            /* Mở rộng thanh tìm kiếm trên điện thoại */
+            .search-box {
+                width: 95%;
+            }
+
+            /* Chuyển bố cục container từ nằm ngang sang xếp dọc */
+            .container {
+                flex-direction: column;
+            }
+
+            /* Đảm bảo thanh bên (Từ của ngày) và nội dung chính chiếm toàn bộ chiều rộng */
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                padding: 20px 15px;
+                min-height: auto;
+            }
+
+            /* Giảm bớt kích thước chữ trên Flashcard cho vừa màn hình */
+            #card-word {
+                font-size: 28px;
+            }
+
+            #card-vi {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
